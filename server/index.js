@@ -10,7 +10,7 @@ app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use('/todos', todosRoutes)
-const mongodb = "mongodb+srv://admin:JykJc8iOIp0OtXFs@cluster0.ltpvw.mongodb.net/mern-database?retryWrites=true&w=majority";
+const mongodb = "password";
 app.get('/', (req, res) => {
     res.send('Welcome to server')
 });
